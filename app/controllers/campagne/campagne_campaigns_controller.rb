@@ -59,4 +59,8 @@ module Campagne
 
 
   end
+  private
+	def project_params
+		params.require(:CampagneCampaign).permit(:id)
+	end
 end
