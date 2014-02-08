@@ -7,8 +7,11 @@ Gem::Specification.new do |s|
   s.authors     = ["Arley Lobato"]
   s.email       = ["arleylobato@gmail.com"]
   s.homepage    = "http://github.com/alobato/campagne"
+  s.authors     = ["Abhijit S. Navale"]
+  s.email       = ["abhijit.foss@gmail.com"]
+  s.homepage    = "http://github.com/abhi-navale/campagne"
   s.summary     = "campagne-#{s.version}"
-  s.description = "A simple Rails 3 engine gem to manage and send newsletters."
+  s.description = "A simple Rails 4 engine gem to manage and send newsletters."
 
   s.add_dependency "rails", "4.0.1"
   s.add_dependency "mysql2", "0.3.11"
