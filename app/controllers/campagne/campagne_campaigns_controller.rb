@@ -61,6 +61,6 @@ module Campagne
   end
   private
 	def project_params
-		params.require(:CampagneCampaign).permit(:id)
+		params.require(:CampagneCampaign).permit(:id,:campagne_campagne_campaign,:schedule)
 	end
 end
