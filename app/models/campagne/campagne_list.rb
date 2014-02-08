@@ -3,9 +3,13 @@ module Campagne
     has_and_belongs_to_many :campagne_contacts
     has_and_belongs_to_many :campagne_campaigns
 
-    attr_accessible :name, :contact_ids
+  
 
     validates :name, :presence => true, :uniqueness => true
-
+  private
+	def params
+		params.require(:CampagneList).permit(:name,:contact_ids)
+	end
+  
   end
 end
