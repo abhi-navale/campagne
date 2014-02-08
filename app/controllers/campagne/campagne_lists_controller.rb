@@ -42,7 +42,8 @@ module Campagne
     end
 
   end
-  private
+  
+	private
 	def project_params
 		params.require(:CampagneLists).permit(:id,:emails,:location,:notice,:email)
 	end
