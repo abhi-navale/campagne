@@ -1,5 +1,6 @@
 Campagne
 ========
+Rails 4 compatibilyt added by: Abhijit S. Navale
 
 Campagne is a simple Rails 3 engine gem. It adds a admin painel (/campagne) to manage and send newsletters, email marketing campaigns, alerts, etc.
 
