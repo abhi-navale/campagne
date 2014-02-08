@@ -130,7 +130,7 @@ table th {
         <%= content_tag :div, alert, :id => "flash_alert" %>
       <% end %>
 
-      <%= content_tag :h1, yield(:title) if show_title? %>
+      <%= content_tag :h1, yield(:title)%>
       <%= yield %>
     </div>
   </body>
