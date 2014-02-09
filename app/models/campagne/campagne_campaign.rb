@@ -21,10 +21,7 @@ module Campagne
       formated_body('0')
     end
     
-    private
-	  def params
-  		params.require(:CampagneCampaign).permit(:name, :subject, :body, :campagne_list_ids)
-  	end
+    
 
   end
 end
