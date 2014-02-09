@@ -18,7 +18,7 @@ module Campagne
     end
 
     def create
-      @campaign = CampagneCampaign.new(project_params)
+      @campaign = CampagneCampaign.new(params.permit(:campagne_campagne_campaign))
       flash[:notice] = 'Campaign was successfully created.' if @campaign.save
       respond_with(@campaign, :location => campagne_campagne_campaigns_path)
     end
@@ -58,9 +58,10 @@ module Campagne
     end
 
 
-  end
+ 
   private
 	def project_params
 		params.require(:CampagneCampaigns).permit(:id,:campagne_campagne_campaign,:schedule,:location,:notice,:layout)
 	end
+end
 end
