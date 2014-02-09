@@ -41,7 +41,7 @@ module Campagne
       end
     end
 
-  end
+  #end
   
 private
 def project_params
