@@ -2,7 +2,7 @@ module Campagne
   class CampagneDelivery < ActiveRecord::Base
     belongs_to :campagne_campaign
 
-    attr_accessible :contact_id, :campagne_list_id , :email, :token
+    #attr_accessible :contact_id, :campagne_list_id , :email, :token
 
     def see!(request)
       self.ip_address = request.remote_ip if ip_address.blank?
