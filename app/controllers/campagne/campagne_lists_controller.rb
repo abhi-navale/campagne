@@ -45,7 +45,7 @@ module Campagne
   
   private
   def project_params
-    params.require(:CampagneLists).permit(:id,:emails,:location,:notice,:email,:campagne_campagne_list)
+    params.require(:Campagne).permit(:id,:emails,:location,:notice,:email,:campagne_campagne_list)
   end
   end
 end
