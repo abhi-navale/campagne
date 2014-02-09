@@ -26,7 +26,7 @@
   <p>    
     <%= hidden_field_tag "campagne_campagne_campaign[campagne_list_ids][]", nil%>
     <% Campagne::CampagneList.all.each do |list| %>
-      <%= check_box_tag "campagne_campagne_campaign[campagne_list_ids][]", list.id, @campaign.campagne_list_ids.include?(list.id), id: dom_id(list) %>
+      <%= check_box_tag "campagne_campaign[campagne_list_ids][]", list.id, @campaign.campagne_list_ids.include?(list.id), id: dom_id(list) %>
       <%= label_tag dom_id(list), list.name %><br/>
     <% end %>
   </p>
