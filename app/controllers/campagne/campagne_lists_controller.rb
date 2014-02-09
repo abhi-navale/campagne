@@ -18,7 +18,7 @@ module Campagne
     end
 
     def create
-      @list = CampagneList.new(params.permit(:campagne_campagne_list))
+      @list = CampagneList.new(params[:campagne_campagne_list].permit(:name))
       flash[:notice] = 'List was successfully created.' if @list.save
       respond_with(@list, :location => campagne_campagne_lists_path)
     end
