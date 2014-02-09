@@ -18,7 +18,7 @@ module Campagne
     end
 
     def create
-      @campaign = CampagneCampaign.new(params[:CampagneCampaign].permit(:campagne_campagne_campaign,:name,:subject,:body))
+      @campaign = CampagneCampaign.new(params[:campagne_campagne_campaign].permit(:name,:subject,:body))
       flash[:notice] = 'Campaign was successfully created.' if @campaign.save
       respond_with(@campaign, :location => campagne_campagne_campaigns_path)
     end
