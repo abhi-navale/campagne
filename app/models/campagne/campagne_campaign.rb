@@ -3,7 +3,7 @@ module Campagne
     has_and_belongs_to_many :campagne_lists
     has_many :campagne_deliveries  
 
-    attr_accessible :name, :subject, :body, :campagne_list_ids
+    
 
     validates :name, :presence => true, :uniqueness => true
     validates :subject, :presence => true
@@ -20,6 +20,11 @@ module Campagne
     def preview
       formated_body('0')
     end
+    
+    private
+	  def params
+  		params.require(:CampagneCampaign).permit(:name, :subject, :body, :campagne_list_ids)
+  	end
 
   end
 end
