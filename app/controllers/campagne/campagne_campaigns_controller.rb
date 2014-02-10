@@ -13,7 +13,7 @@ module Campagne
     end
 
     def new
-      @campaign = CampagneCampaign.new(params[:CampagneCampaigns].permit(:name,:subject,:body))
+      @campaign = CampagneCampaign.new(params[:project_params].permit(:name,:subject,:body))
       respond_with(@campaign)
     end
 
